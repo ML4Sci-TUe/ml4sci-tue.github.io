@@ -4,7 +4,7 @@ category: staff
 title: Kiet Bennema ten Brinke
 image: kiet-bennema-ten-brinke.webp 
 role: PhD Researcher
-projects: Pedestrian dynamics
+projects: Pedestrian dynamics, Fusion, Bubble Dynamics
 permalink: 'team/kiet-bennema-ten-brinke'
 social:
     linkedin: https://www.linkedin.com/in/kiet-bennema-ten-brinke/

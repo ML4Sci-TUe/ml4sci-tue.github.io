@@ -5,6 +5,7 @@ title: Fleur Hendriks
 image: fleur-hendriks.webp 
 role: PhD Researcher
 permalink: 'team/fleur-hendriks'
+projects: Metamaterials
 social:
     linkedin: https://www.linkedin.com/in/fleurhendriks/
     google-scholar: https://scholar.google.com/citations?user=02KfYdwAAAAJ

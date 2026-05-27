@@ -4,6 +4,7 @@ category: staff
 title: Marko Petković
 image: marko-petkovic.webp 
 role: PhD Researcher
+projects: Zeolites, Automated Molecular Simulations
 permalink: 'team/marko-petkovic'
 social:
     linkedin: https://www.linkedin.com/

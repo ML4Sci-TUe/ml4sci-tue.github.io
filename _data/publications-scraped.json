@@ -1,5 +1,39 @@
 [
   {
+    "title": "VADA-NF: Improved Data-Driven Simulation of Nanopore Sequencing",
+    "author": [
+      {
+        "given": "Simon Martinus",
+        "family": "Koop"
+      },
+      {
+        "given": "Mohammadmahdi",
+        "family": "Mehmanchi"
+      },
+      {
+        "given": "Jonas",
+        "family": "Niederle"
+      },
+      {
+        "given": "Marc",
+        "family": "Pagès-Gallego"
+      },
+      {
+        "given": "Vlado",
+        "family": "Menkovski"
+      }
+    ],
+    "container-title": "Machine Learning",
+    "DOI": "10.1007/s10994-026-07001-5",
+    "issued": {
+      "year": 2026,
+      "month_year": "March 2026",
+      "month_year_numeric": 202603
+    },
+    "source": "crossref",
+    "abstract": "Abstract\n                  Nanopore sequencing offers the ability for real-time analysis of long DNA sequences at a low cost, enabling new applications such as early detection of cancer. Due to the complex nature of nanopore measurements and the high cost of obtaining ground-truth datasets, in-silico nanopore simulators play an important role in this field. Existing simulators rely on hand-crafted rules and parameters and do not learn an internal representation that would allow for analyzing underlying biological factors of interest. In this work, we investigate and extend Variational Autoregressive DNA-conditioned Autoencoder (VADA), a purely data-driven method for simulating nanopore signals based on an autoregressive latent variable model. We show that VADA can effectively model DNA-conditioned probability distributions over nanopore current sequences to produce varying current observations. We show that improving the flexibility of the conditional prior with conditional Real NVP flow significantly improves the simulation quality of VADA, a model that we refer to as VADA Normalizing Flow. We empirically demonstrate that our model achieves competitive simulation performance on experimental nanopore data. Moreover, we show that our model learns an informative latent representation that is predictive of the DNA labels. We hypothesize that other biological factors of interest, beyond DNA labels, can potentially be extracted from such a learned latent representation."
+  },
+  {
     "title": "Wallpaper Group-Based Mechanical Metamaterials and their Mechanical Responses",
     "author": [
       {
@@ -378,9 +412,9 @@
     "container-title": "arXiv",
     "DOI": "10.48550/arxiv.2505.18647",
     "issued": {
-      "year": 2025,
-      "month_year": "May 2025",
-      "month_year_numeric": 202505
+      "year": 2026,
+      "month_year": "May 2026",
+      "month_year_numeric": 202605
     },
     "source": "datacite",
     "abstract": ""

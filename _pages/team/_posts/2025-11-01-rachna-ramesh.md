@@ -4,7 +4,7 @@ category: staff
 title: Rachna Ramesh
 image: rachna-ramesh.webp 
 role: Research Engineer
-projects: Bubbly flows
+projects: Bubbly flows, Zeolites
 permalink: 'team/rachna-ramesh'
 social:
     linkedin: https://www.linkedin.com/in/rachnaramesh

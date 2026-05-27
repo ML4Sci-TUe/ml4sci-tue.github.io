@@ -19,6 +19,8 @@ team = [
     "Kiet Bennema ten Brinke",
     "Rachna Ramesh",
     "Yoeri Poels",
+    "Simon Martinus Koop",
+    "Mohammadmahdi Mehmanchi",
 ]
 
 
@@ -371,9 +373,9 @@ def main():
 
     # Sort by year (most recent first)
     publications.sort(
-        key=lambda x: x["issued"]["month_year_numeric"]
-        if x["issued"]["month_year_numeric"]
-        else 0,
+        key=lambda x: (
+            x["issued"]["month_year_numeric"] if x["issued"]["month_year_numeric"] else 0
+        ),
         reverse=True,
     )
 
@@ -390,13 +392,13 @@ def main():
     print(f"\n✅ Saved {len(publications)} publications to _data/publications-scraped.json")
 
     # # Fetch PDFs
-    # dois = [pub["DOI"] for pub in publications if pub["DOI"]]
+    dois = [pub["DOI"] for pub in publications if pub["DOI"]]
 
     # print("\nFetching PDFs of publications...")
-    # fetch_pdfs(dois)
+    fetch_pdfs(dois)
 
-    # print("\nGenerating PDF thumbnails...")
-    # get_pdf_thumbnails()
+    print("\nGenerating PDF thumbnails...")
+    get_pdf_thumbnails()
 
 
 if __name__ == "__main__":

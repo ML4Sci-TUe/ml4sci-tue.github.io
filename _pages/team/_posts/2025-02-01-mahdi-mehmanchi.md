@@ -5,6 +5,7 @@ title: Mahdi Mehmanchi
 image: Mehmanchi_Mahdi.webp 
 role: PhD Researcher
 permalink: 'team/mehmanchi-mahdi'
+projects: Stellerator Simulation
 social:
     linkedin: https://www.linkedin.com/
     google-scholar: https://scholar.google.com/citations?user=Bv47zVAAAAAJ&hl=en
