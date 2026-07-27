@@ -99,112 +99,103 @@ layout: default
     These are some interesting projects we are currently working on. All our projects can be
     found
     <a href="/projects/" style="color:#C81919">on the Projects page</a>.
-    <h2>Mechanical Metamaterials</h2>
+    <h2>Simulating Deformable Interfaces of Rising Bubbles</h2>
     <p>
-        Metamaterials are engineered structures whose microscopic geometry gives rise to unusual
-        properties — such as
-        tunable stiffness, shape-morphing behavior, or adaptive acoustic response — that don’t
-        occur in
-        conventional
-        materials. Our research focuses on flexible, porous mechanical metamaterials that can
-        actively
-        change their
-        mechanical or acoustic properties when stimulated by mechanical, pneumatic, or magnetic
-        loading.
-        Such materials have
-        potential applications in soft robotics, adaptive structures, and biomedical devices.</p>
+        Bubbly flows appear in many industrial and environmental processes, where the motion,
+        deformation, and interaction of bubbles strongly influence mixing, transport, and
+        overall system behavior. These systems are difficult to model because they combine
+        many-body hydrodynamic interactions with evolving interface geometry over time.
+        Our work studies learning-based surrogate models for bubbly-flow dynamics using
+        high-fidelity Front-Tracking simulation data. To support this, we have built a
+        time-resolved dataset of deformable bubble swarms that includes both centroid
+        trajectories and compact spherical-harmonic descriptions of bubble shape. On the
+        modeling side, we are looking at graph neural networks and related spatiotemporal
+        architectures that can incorporate interaction structure and physical context, with
+        the broader goal of developing efficient neural simulators for long-horizon prediction
+        of deformable multiphase flows.
+    </p>
 
-    <p>
-        Designing these metamaterials is challenging because their behavior involves complex,
-        nonlinear
-        deformations and
-        pattern transformations like buckling. Exploring their vast design space through
-        traditional
-        simulations is
-        computationally expensive. To overcome this, our team is developing machine learning–based
-        surrogate models,
-        particularly graph neural networks (GNNs), that can accurately and efficiently predict the
-        response of metamaterials
-        with arbitrary geometries. These models capture essential physical symmetries (like
-        rotation,
-        scaling, and
-        periodicity) and can generalize to new designs, enabling faster and smarter discovery of
-        metamaterials tailored for
-        specific functions.</p>
+    <div class="bubble-figures"
+        style="display:flex; justify-content:center; gap:20px; align-items:stretch; flex-wrap:wrap; margin-top: 20px;">
 
-    <div class="metamaterials-figures"
-        style="display:flex; justify-content:center; gap:20px; align-items:flex-start; flex-wrap:wrap;">
-        <figure style="margin:20px 0 0 0; max-width:45%;">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/projects/metamaterials1.png"
-                alt="Metamaterial sample" style="width:100%; height:auto; display:block;" />
+        <figure style="margin:0; max-width:26%; display:flex; flex-direction:column;">
+            <img src="http://localhost:4000/images/projects/bubbles1.png" alt="Bubbles"
+                style="width:100%; height:auto; display:block;" />
             <figcaption
-                style="font-size: 15px; text-align: center; font-style: italic; margin-top: 15px;">
-                Schematic overview of the first-order computational homogenization procedure from <a
-                    href="https://doi.org/10.1016/j.cma.2025.117867"
-                    style="color:#C81919">SimEGNN</a>
+                style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+                Deformation of bubble interface meshes represented using spherical harmonics
+                trajectories <a href="https://arxiv.org/pdf/2607.07275"
+                    style="color:#C81919">[1]</a>.
             </figcaption>
         </figure>
 
-        <figure style="margin:0; max-width:37%;">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/animations/metamaterials.gif"
-                alt="Buckling" style="width:100%; height:auto; display:block;" />
+        <figure style="margin: 20px 0 0 0; max-width:20%; display:flex; flex-direction:column;">
+            <img src="http://localhost:4000/images/projects/bubbles2.png" alt="Bubbles"
+                style="width:100%; height:auto; display:block;" />
             <figcaption
-                style="font-size: 15px; text-align: center; font-style: italic; margin-top: 5px;">
-                Buckling behavior of different mechanical metamaterials under compression.
-                \(\mathbf{F}\)
-                is the macroscopic deformation gradient.
+                style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+                Snapshots of bubble swarm data for different diameters and void factions <a
+                    href="https://arxiv.org/pdf/2607.07275" style="color:#C81919">[1]</a>.
             </figcaption>
         </figure>
+
     </div>
 
-    <h2>Pedestrian Dynamics</h2>
+    <h2>Data-Coupled Flow Matching</h2>
     <p>
-        Understanding how pedestrians move and interact in crowds is both a fundamental problem in
-        active matter physics and
-        essential for designing safer, more efficient urban spaces. Traditional studies face a
-        trade-off
-        between the control
-        of laboratory experiments and the scale of real-world observations, limiting our ability to
-        capture the true
-        complexity of crowd behavior. Our team bridges this gap through virtual surrogate
-        experiments
-        powered by graph
-        neural networks (GNNs), trained on large-scale pedestrian tracking data.</p>
-
+        Understanding and simulating complex dynamical systems is a central theme of our research.
+        Many scientific and societal systems, ranging from interacting particles in physics and
+        molecular dynamics to groups of humans navigating shared spaces can be described as
+        geometric
+        trajectories of multiple interacting entities. These systems are difficult to
+        model as they exhibit strong coupling between agents, multi-scale temporal structure and
+        sensitivity to perturbations At the same time, practical simulators benefit from being
+        probabilistic, capturing uncertainty and multimodality while being computationally efficient
+        at scale. Our work investigates how modern generative modeling, in particular flow
+        matching-based methods, can be adapted to respect the structure of these systems while
+        avoiding the inefficiencies of autoregressive rollouts and uninformed Gaussian priors.
+    </p>
     <p>
-        This approach, realized in our Neural Crowd Simulator (NeCS), reproduces known results in
-        collision avoidance and
-        reveals new insights into multi-person (N-body) interactions, showing that pedestrians
-        respond
-        primarily to a small
-        number of nearby individuals within a limited field of view. By combining data-driven
-        modeling
-        with physical
-        interpretability, we uncover the topological nature of social interactions in
-        crowds—challenging
-        long-held
-        assumptions of additive pairwise forces. Beyond pedestrian movement, this framework
-        demonstrates
-        how machine
-        learning can accelerate discovery in complex social and physical systems, from animal
-        collectives to opinion
-        dynamics.</p>
+        We are currently researching data-coupled generative priors for
+        conditional trajectory simulation. Rather than initializing generative models just from
+        generic Gaussian noise, we construct informed priors that are directly conditioned on
+        observed
+        initial
+        frames, embedding basic dynamical structure such as continuity and inertia. This reduces the
+        transport cost between prior and target trajectory distributions, simplifies the learned
+        vector fields, and enables accurate simulation with very few integration steps. This line of
+        work has demonstrated state-of-the-art accuracy and improved scaling on
+        benchmarks in N-body physics, molecular dynamics, and human trajectory forecasting. More
+        broadly, our work is trying to advance a principled view of prior design in conditional
+        generative modeling for dynamical systems, aiming to build scalable, symmetry-aware
+        simulators
+        that generalize across domains and temporal horizons.
+    </p>
 
-    <div class="pedestrian-figures"
-        style="display:flex; justify-content:center; align-items:flex-start; flex-wrap:wrap;">
-        <figure style="margin:20px 0 0 0; max-width:80%;">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/animations/pedestrians.gif"
-                alt="Simulated pedestrians"
-                style="max-width: 100%; height: auto; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;" />
-            <figcaption style="font-size: 15px; text-align: center; font-style: italic;">
-                Simulation of pedestrian trajectories from <a
-                    href="https://doi.org/10.1038/s41598-025-92566-9"
-                    style="color:#C81919">NeCS</a>.
-                Top shows simulation, bottom is ground truth. Only colored trajectories are
-                predicted, conditioned on neighbouring pedestrians.
+    <div class="stflow-figures"
+        style="display:flex; justify-content:center; gap:20px; align-items:stretch; flex-wrap:wrap; margin-top: 20px;">
 
+        <figure style="margin:0; max-width:38%; display:flex; flex-direction:column;">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/animations/spatiotemporal_graph_denoising_animation.gif"
+                alt="Metamaterial sample" style="width:100%; height:auto; display:block;" />
+            <figcaption
+                style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+                Denoising animation from predictions of STFlow on an N-Body gravitational system
             </figcaption>
         </figure>
+
+        <figure style="margin: 20px 0 0 0; max-width:52%; display:flex; flex-direction:column;">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/projects/STFlow.svg"
+                alt="STFlow architecture" style="width:100%; height:auto; display:block;" />
+            <figcaption
+                style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+                Model architecture of Spatio-Temporal Flow (<a
+                    href="https://doi.org/10.48550/arXiv.2505.18647"
+                    style="color:#C81919">paper</a>),
+                describing a permutation-equivariant and convolution-based flow matching model
+            </figcaption>
+        </figure>
+
     </div>
 </div>
 <div style="margin-top: 50px;">

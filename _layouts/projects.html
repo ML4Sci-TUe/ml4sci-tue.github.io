@@ -11,6 +11,53 @@ permalink: /projects/
     <h1>Projects</h1>
     <p>Below are some projects that we are currently working on in our group.</p>
 
+    <h2>Simulating Deformable Interfaces of Rising Bubbles</h2>
+    <p>
+      Bubbly flows appear in many industrial and environmental processes, where the motion,
+      deformation, and interaction of bubbles strongly influence mixing, transport, and
+      overall system behavior. These systems are difficult to model because they combine
+      many-body hydrodynamic interactions with evolving interface geometry over time.
+      Our work studies learning-based surrogate models for bubbly-flow dynamics using
+      high-fidelity Front-Tracking simulation data. To support this, we have built a
+      time-resolved dataset of deformable bubble swarms that includes both centroid
+      trajectories and compact spherical-harmonic descriptions of bubble shape. On the
+      modeling side, we are looking at graph neural networks and related spatiotemporal
+      architectures that can incorporate interaction structure and physical context, with
+      the broader goal of developing efficient neural simulators for long-horizon prediction
+      of deformable multiphase flows.
+    </p>
+
+    <div class="bubble-figures"
+      style="display:flex; justify-content:center; gap:20px; align-items:stretch; flex-wrap:wrap; margin-top: 20px;">
+
+      <figure style="margin:0; max-width:28%; display:flex; flex-direction:column;">
+        <img src="http://localhost:4000/images/projects/bubbles1.png" alt="Bubbles"
+          style="width:100%; height:auto; display:block;" />
+        <figcaption
+          style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+          Deformation of bubble interface meshes represented using spherical harmonics
+          trajectories <a href="https://arxiv.org/pdf/2607.07275" style="color:#C81919">[1]</a>.
+        </figcaption>
+      </figure>
+
+      <figure style="margin: 20px 0 0 0; max-width:26%; display:flex; flex-direction:column;">
+        <img src="http://localhost:4000/images/projects/bubbles2.png" alt="Bubbles"
+          style="width:100%; height:auto; display:block;" />
+        <figcaption
+          style="text-align:center; font-style:italic; margin-top:auto; padding-top:15px;">
+          Snapshots of bubble swarm data for different diameters and void factions <a
+            href="https://arxiv.org/pdf/2607.07275" style="color:#C81919">[1]</a>.
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <p><i>Relevant paper(s):</i></p>
+    <ul>
+      <li><a href="https://arxiv.org/pdf/2607.07275" style="color: #C81919;">BubbleSH: A Dataset of
+          Rising Bubbles with Deformable Interfaces</a></li>
+    </ul>
+
     <h2>Data-Coupled Flow Matching</h2>
     <p>
       Understanding and simulating complex dynamical systems is a central theme of our research.
@@ -65,7 +112,7 @@ permalink: /projects/
 
     </div>
 
-    <p><i>Relevant publication:</i></p>
+    <p><i>Relevant paper(s):</i></p>
     <ul>
       <li><a href="https://doi.org/10.48550/arXiv.2505.18647" style="color: #C81919;">STFlow:
           Data-Coupled Flow Matching for Geometric Trajectory Simulation</a></li>
@@ -113,7 +160,7 @@ permalink: /projects/
       </figure>
     </div>
 
-    <p><i>Relevant publications:</i></p>
+    <p><i>Relevant paper(s):</i></p>
     <ul>
       <li><a href="https://doi.org/10.1016/j.cma.2025.117867" style="color: #C81919;">Similarity
           equivariant graph neural networks for homogenization of metamaterials</a></li>
@@ -159,7 +206,7 @@ permalink: /projects/
       </figure>
     </div>
 
-    <p><i>Relevant publications:</i></p>
+    <p><i>Relevant paper(s):</i></p>
     <ul>
       <li><a href="https://doi.org/10.1038/s41598-025-92566-9" style="color: #C81919;">Discovering
           interaction mechanisms in crowds via deep generative surrogate experiments</a></li>
@@ -214,7 +261,7 @@ permalink: /projects/
       </figure>
     </div>
 
-    <p><i>Relevant publications:</i></p>
+    <p><i>Relevant paper(s):</i></p>
     <ul>
       <li><a href="https://doi.org/10.1039/d5ta02482j" style="color: #C81919;">Symmetry-informed
           graph neural networks for carbon dioxide isotherm and adsorption prediction in
@@ -280,7 +327,7 @@ permalink: /projects/
         </figcaption>
       </figure>
     </div>
-    <p><i>Relevant publications:</i></p>
+    <p><i>Relevant paper(s):</i></p>
     <ul>
       <li><a href="https://doi.org/10.48550/arxiv.2502.02129" style="color: #C81919;">Deep Neural
           Cellular Potts Models
